@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visuals By Davo - Digital Art Handmade For You</title>
+    <link rel="icon" type="image/jpeg" href="vbd-custom-logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Visuals By Davo</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Visuals By Davo Handmade For You</h1>
+                <p class="hero-tagline">Unique Digital Art & Custom Illustrations from Atlanta</p>
+                <div class="hero-buttons">
+                    <a href="#gallery" class="btn btn-primary">View Gallery</a>
+                    <button class="btn btn-secondary" onclick="showEmailOptions()">Get Custom Art</button>
+                </div>
+                
+                <!-- Email Options Modal -->
+                <div id="emailModal" class="email-modal">
+                    <div class="email-modal-content">
+                        <span class="email-modal-close" onclick="hideEmailOptions()">&times;</span>
+                        <h3>Choose Your Email Platform</h3>
+                        <p>How would you like to contact me for custom art?</p>
+                        <div class="email-options">
+                            <a href="mailto:davodrewdat@outlook.com?subject=Custom Art Request&body=Hi Davo, I'm interested in getting custom digital art. Please let me know about your process and pricing." class="email-option">
+                                <i class="fas fa-envelope"></i>
+                                <span>Outlook</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=davodrewdat@outlook.com&su=Custom%20Art%20Request&body=Hi%20Davo,%0A%0AI'm%20interested%20in%20getting%20custom%20digital%20art.%20Please%20let%20me%20know%20about%20your%20process%20and%20pricing.%0A%0AThanks!" target="_blank" class="email-option">
+                                <i class="fab fa-google"></i>
+                                <span>Gmail</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-contact">
+                    <p><i class="fas fa-envelope"></i> davodrewdat@outlook.com</p>
+                </div>
+            </div>
+            <div class="hero-art">
+                <div class="logo-container">
+                    <div class="custom-logo-wrapper">
+                        <img src="vbd-custom-logo.jpg" alt="Visuals By Davo Logo" class="hero-custom-logo">
+                        <div class="logo-animation-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Visuals By Davo</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Visuals By Davo, your premier destination for unique digital art and custom illustrations. Based in Atlanta, GA, we specialize in creating eye-catching character designs, typography art, and personalized digital artwork that tells your story.</p>
+                    <p>We source and create stylish digital art that stands out on social media platforms, particularly Instagram, where we showcase our latest creations and connect with art enthusiasts. Our passion is bringing creative visions to life through bold colors, distinctive characters, and innovative design techniques.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Atlanta, GA</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fab fa-instagram"></i>
+                            <span>@davodrewdat</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-palette"></i>
+                            <span>Custom Digital Art</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <svg viewBox="0 0 300 300" class="about-illustration">
+                        <rect x="50" y="50" width="200" height="200" rx="20" fill="#f0f0f0" stroke="#333" stroke-width="3"/>
+                        <circle cx="150" cy="130" r="40" fill="#FFB74D"/>
+                        <rect x="110" y="100" width="20" height="20" rx="3" fill="#333"/>
+                        <rect x="170" y="100" width="20" height="20" rx="3" fill="#333"/>
+                        <path d="M130 150 Q150 170 170 150" stroke="#333" stroke-width="3" fill="none"/>
+                        <text x="150" y="220" text-anchor="middle" fill="#333" font-size="14" font-weight="bold">ARTIST</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Social Media Art</h3>
+                    <p>Curated digital art designed specifically for social media platforms. Perfect for Instagram posts, stories, and profile aesthetics.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Local Delivery</h3>
+                    <p>Fast and reliable delivery service throughout the Atlanta metropolitan area. Get your digital art prints delivered right to your door.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Custom Art Requests</h3>
+                    <p>Personalized digital artwork created just for you. From character illustrations to typography designs, we bring your vision to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <p class="gallery-subtitle">Explore our latest digital art creations</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="rip_dave_art.png" alt="Rod Wave Design" class="gallery-art">
+                    <div class="gallery-overlay">
+                        <h4>Rod Wave Design</h4>
+                        <p>Custom character portrait with signature style - Made by Davo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="grit_art.png" alt="Grit Typography Design" class="gallery-art">
+                    <div class="gallery-overlay">
+                        <h4>"GRIT" Typography Design</h4>
+                        <p>Bold 3D lettering with distinctive green color scheme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I buy a design?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can purchase our designs by contacting us directly via email at davodrewdat@outlook.com or through our Instagram @davodrewdat. We'll discuss your needs, provide pricing, and handle the transaction securely.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you deliver?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer local delivery throughout the Atlanta metropolitan area. For digital files, we provide instant delivery via email. Physical prints can be delivered or shipped depending on your location.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I contact you?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The best way to reach us is through email at davodrewdat@outlook.com or follow us on Instagram @davodrewdat. We typically respond within 24 hours and are always excited to discuss new projects!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How often do you post new designs?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We regularly post new artwork on our Instagram account, typically 2-3 times per week. Follow @davodrewdat to stay updated with our latest creations and special offers!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Create Something Amazing Together</h3>
+                    <p>Ready to bring your vision to life? Whether you need custom digital art, social media graphics, or unique character designs, we're here to help.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:davodrewdat@outlook.com">davodrewdat@outlook.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://www.instagram.com/@davodrewdat" target="_blank">@davodrewdat</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Atlanta, GA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option value="custom">Custom Art Request</option>
+                                <option value="social">Social Media Design</option>
+                                <option value="character">Character Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals By Davo</h3>
+                    <p>Digital Art Handmade For You</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>davodrewdat@outlook.com</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/@davodrewdat" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Visuals By Davo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
